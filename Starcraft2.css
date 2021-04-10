@@ -1,0 +1,173 @@
+body {
+	font-family:Verdana, serif;
+	color:#58afaf;
+	margin:0 auto;
+    /*background-image: url('images/sc2.jpg');
+	background-size: 100%;
+	background-position: left;*/
+
+	/*background-image: url('images/sc2Midle.jpg');
+	background-size: 100%;
+	background-position: center;*/
+
+	background-image: url('images/sc2Right2.png');
+	background-size: 100%;
+	background-position: right;
+
+	/*background-image: url('images/sc2Left2.png');
+	background-size: 100%;
+	background-position: left;*/
+
+	/*background-image: url('images/sc2Midle.jpg');*/
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+	line-height:1.6;
+	padding: 20% 0% 3% 0%; 						/*20% top 0% right 3% botton and 0% left*/ 
+	width:  100%;								/*sets the width of an element.*/
+	height: 25rem;
+}
+
+#button {
+    width: 100%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: #008CBA;
+}
+
+#leftSide{
+    float: left;
+	max-width: 25%;
+	margin-left: 2%;
+}
+
+#rightSide {
+    width: 30%;
+    float: right;
+    padding: 0% 0% 3% 0%;						/* 20 encima 0 direita 3 embaixo 0 esquerda*/ 
+	height: 36rem;
+}
+
+#name {
+	width: 100%;
+	height: 1.5rem;
+}
+
+#myText {
+	width: 50%;
+	height: 1.5rem;
+}
+
+footer {
+	background: DarkGrey;
+	color: White;
+	text-align: right;
+	padding: 1rem;
+    display: block;
+	position: fixed;
+    bottom:0;
+    width:99%;
+}
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 50px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 20px;
+	-webkit-user-select: none;					/*Prevent text selection of a <div> element:*/
+	-moz-user-select: none;						/*Prevent text selection of a <div> element:*/
+	-ms-user-select: none;						/*Prevent text selection of a <div> element:*/
+	user-select: none;							/*Prevent text selection of a <div> element:*/
+}
+
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/*
+line 90 to line 93
+Prevent text selection of a <div> element
+Check the item 5.3.3 Content selection granularity: the 'user-select' property
+@link: https://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select
+
+complement: "markings" in front of each (-moz, -webkit, -ms) means
+-moz: for mozilla
+-ms: for internet explorer
+-webkit: for chrome
+*/
+
+/*
+line 30
+padding
+@link: https://www.w3schools.com/css/css_padding.asp
+*/
+
+/*
+line 31
+width
+*/
+
+/*
+position
+@link: https://www.w3schools.com/css/css_positioning.asp
+*/
+
+/*
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+*/
